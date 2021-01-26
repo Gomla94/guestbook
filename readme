@@ -1,0 +1,20 @@
+I used classes to organize my code.
+
+I created Connection class where i connect to the database through the connect method, and to be able to use the connect method
+in every class that needs a database connection.
+
+I created Message class and put all the methods related to the message in it like create, show, update, delete and index, so whenever i needed to call 
+a specific method from the class i simply create a new object and call the method i want.
+
+I used Trait because i found myself repeating the array_push method to push a new error in the errors array, so i created a Trait and i declared
+a method in it called addError so whenever i needed to create an error i simply call the method and pass the error value to it as a parameter.
+
+I created an Auth class to put all the methods related to the user in it like login and register.
+
+I specified the database credentials in the connection.php file.
+
+The errors.php file is simply for looping through the errors variable and show it in the page i include the errors.php file in it.
+
+In the messages folder you'll find create.php, delete.php, index.php, Message.php, show.php and update.php.
+
+In the users folder you'll find auth.php, login.php, logout.php and register.php.
